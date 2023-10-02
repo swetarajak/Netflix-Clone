@@ -49,8 +49,9 @@ body{
     font-weight: 400;
     font-size: 1.3rem;
 }
-.form{
-    display:flex;
+.forms{
+    width: 100%;
+    height: auto;
 }
  #mail{
     width:25%;
@@ -154,7 +155,7 @@ p{
     font-weight: 800;
 
 }
-.faq_text #mail, .faq_text button{
+.faq_text button{
     text-align: center;
 }
 .faq_text .rect{
@@ -180,12 +181,12 @@ p{
     }
     .bg{
         width:640px;
-        height:500px;
+        height:600px;
         max-width:640px;
     }
     .overlay{
         width:640px;
-        height:500px;
+        height:600px;
         max-width:640px;
 
     }
@@ -194,8 +195,9 @@ p{
         padding-top:25px;
     }
     .forms{
-        display:block;
-        height:auto;
+        max-width: 640px;
+        display:flex;
+        flex-direction: column;
     }
     .titles h1{
         font-size:2rem;
@@ -216,27 +218,22 @@ p{
         font-size: 1.3rem;
     }
      #mail{
-        width:25%;
+        width:70%;
         height:55px;
-        border-radius: 5px;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) , rgba(0, 0, 0, 0.9) 100%);
-        opacity: 0.5;
-        margin-right:12px;
-        padding-left: 10px;
+        margin-inline:auto;
+        margin-block: 30px;
     }
      button{
-        width:20px;
+        width:25%;
         height:55px;
-        border-radius: 5px;
-        background: red;
-        color: white;
-        font-weight: 700;
-        font-size: 10px;
+        font-size: 20px;
         border:10px solid red ;
+        margin-inline:auto;
     }
     .text{
         margin-top:30px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         margin-inline:30px;
 
     }
@@ -297,9 +294,9 @@ p{
         font-weight: 700;
         margin-inline: 40px;
     }
-    .faq_text #mail, .faq_text button{
-        text-align: center;
-    }
+    /* .faq_text #mail, .faq_text button{
+        /* text-align: center; 
+    } */
     .faq_text .rect{
         width:80%;
     }

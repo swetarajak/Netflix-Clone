@@ -138,7 +138,7 @@ p{
 /* ==================================================================================================================================================================== */
 .faq{
     width: 100%;
-    height: auto;
+    height: 800px;
     margin-inline:auto;
 }  
 .faq_text{
@@ -160,7 +160,7 @@ p{
 .faq_text .rect{
     width:75%;
     height: 80px;
-    background: rgb(51, 51, 51);
+    background: rgb(29, 29, 29);
     margin-bottom: 10px;
     margin-inline:auto;
 }
@@ -171,7 +171,7 @@ p{
     text-align: left;
 }
 .rect:hover{
-    background: grey;
+    background: rgb(48, 48, 48);
 }
 /* ================================================================================================================================================================= */
 @media only screen and (max-width: 640px) {
@@ -180,12 +180,12 @@ p{
     }
     .bg{
         width:640px;
-        height:700px;
+        height:500px;
         max-width:640px;
     }
     .overlay{
         width:640px;
-        height:700px;
+        height:500px;
         max-width:640px;
 
     }
@@ -237,6 +237,7 @@ p{
     .text{
         margin-top:30px;
         display: block;
+        margin-inline:30px;
 
     }
     .smartTv, .download, .watch, .kids{
@@ -250,12 +251,12 @@ p{
     }
     .text h1{
         text-align: center;
-        font-size: 2rem;
+        font-size: 3rem;
     
     }
     p{
         padding-top: 20px;
-        font-size: 1.55rem;
+        font-size: 1.8rem;
         font-weight: 500;
     }
     /* =================================================================================================================================================================== */
@@ -267,34 +268,44 @@ p{
         z-index: 1;
     }
     .smartTv img, .watch img{
+        height: 360px;
+        width: 520px;
+    }
+    .smartTv .video{
+        max-width: 60%;
+        max-height: 56%;
+        top: 46%;
+        left: 50%;
+    }
+    .watch .video{
+        max-width: 53%;
+        max-height: 48%;
+        top: 34%;
+        left: 49%;
+    }
+    .download img, .kids img{
         height: 284px;
         width: 379px;
     }
-    .smartTv .video{
-        z-index: -1;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        max-width: 44%;
-        max-height: 55%;
-        position: absolute;
-        top: 46%;
-        left: 49%;
-        transform: translate(-50%, -50%);
+    .faq{
+        width: 640px;
+    }  
+    .faq_text{
+        width: 640px;
     }
-    .watch .video{
-        z-index: -1;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        max-width: 63%;
-        max-height: 47%;
-        position: absolute;
-        top: 34%;
-        left: 50%;
-        /* -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%); */
-        transform: translate(-50%, -50%);
+    .faq_text h1{
+        font-weight: 700;
+        margin-inline: 40px;
+    }
+    .faq_text #mail, .faq_text button{
+        text-align: center;
+    }
+    .faq_text .rect{
+        width:80%;
+    }
+    .faq .membership{
+        margin-inline: 70px;
+        padding-top:40px;
+        padding-bottom:25px;
     }
   }

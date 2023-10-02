@@ -1,0 +1,300 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box
+}
+body{
+    background-color: black;
+    color:white;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.bg{
+    width:100%;
+    height:700px;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/b5953637-091d-4e02-9754-2bfadc8a8f7c/IN-en-20230925-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+}
+.overlay{
+    width:100%;
+    height:700px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.9) 100%);
+    border-bottom: 10px solid rgb(43, 41, 41);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 200px;
+    padding-top:15px;
+}
+.titles h1{
+    color:rgb(172, 10, 10);
+    font-size:2.8rem;
+}
+.texts{
+    text-align: center;
+    margin-block:14rem;
+}
+.texts h1{
+    padding-bottom:20px;
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+.texts h3{
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.texts h4{
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.form{
+    display:flex;
+}
+ #mail{
+    width:25%;
+    height:55px;
+    border-radius: 5px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) , rgba(0, 0, 0, 0.9) 100%);
+    opacity: 0.5;
+    margin-right:12px;
+    padding-left: 10px;
+}
+ button{
+    width:180px;
+    height:55px;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    border:10px solid red ;
+}
+/* ================================================================================================================================================================== */
+.text{
+    margin-top:200px;
+    /* text-align: left; */
+}
+.text h1{
+    text-align: left;
+    color:white;
+    font-size: 3rem;
+
+}
+p{
+    font-family: 'poppins', Helvetica, sans-serif;
+    padding-top: 20px;
+    font-size: 1.55rem;
+    font-weight: 500;
+}
+/* =================================================================================================================================================================== */
+.smartTv, .download, .watch, .kids{
+    width:100%;
+    height:600px;
+    display: flex;
+    border-bottom: 10px solid rgb(43, 41, 41);
+    padding-inline:9em;
+
+}
+.smartTv .block, .watch .block{
+    margin-block:40px;
+    position: relative;
+    flex-basis: 50%;
+    padding: 0;
+    z-index: 1;
+}
+.smartTv img, .watch img{
+    height: 480px;
+    width: 640px;
+}
+.smartTv .video{
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 58%;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.watch .video{
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    /* -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+}
+/* ==================================================================================================================================================================== */
+.faq{
+    width: 100%;
+    height: auto;
+    margin-inline:auto;
+}  
+.faq_text{
+    width: 100%;
+    height:auto;
+    text-align: center;
+    margin-top:70px;
+}
+.faq_text h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size:3rem;
+    font-weight: 800;
+
+}
+.faq_text #mail, .faq_text button{
+    text-align: center;
+}
+.faq_text .rect{
+    width:75%;
+    height: 80px;
+    background: rgb(51, 51, 51);
+    margin-bottom: 10px;
+    margin-inline:auto;
+}
+.rect p{
+    padding-left: 20px;
+    font-weight: 400;
+    padding-top: 25px;
+    text-align: left;
+}
+.rect:hover{
+    background: grey;
+}
+/* ================================================================================================================================================================= */
+@media only screen and (max-width: 640px) {
+    body {
+        max-width:640px;
+    }
+    .bg{
+        width:640px;
+        height:700px;
+        max-width:640px;
+    }
+    .overlay{
+        width:640px;
+        height:700px;
+        max-width:640px;
+
+    }
+    .navbar{
+        margin-inline: 10px;
+        padding-top:25px;
+    }
+    .forms{
+        display:block;
+        height:auto;
+    }
+    .titles h1{
+        font-size:2rem;
+    }
+    .texts{
+        margin-block:5rem;
+        display:block;
+    }
+    .texts h1{
+        font-size: 2rem;
+        font-weight: 700;
+    
+    }
+    .texts h3{
+        font-size: 1.3rem;
+    }
+    .texts h4{
+        font-size: 1.3rem;
+    }
+     #mail{
+        width:25%;
+        height:55px;
+        border-radius: 5px;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) , rgba(0, 0, 0, 0.9) 100%);
+        opacity: 0.5;
+        margin-right:12px;
+        padding-left: 10px;
+    }
+     button{
+        width:20px;
+        height:55px;
+        border-radius: 5px;
+        background: red;
+        color: white;
+        font-weight: 700;
+        font-size: 10px;
+        border:10px solid red ;
+    }
+    .text{
+        margin-top:30px;
+        display: block;
+
+    }
+    .smartTv, .download, .watch, .kids{
+        width:640px;
+        height:600px;
+        display: block;
+        border-bottom: 10px solid rgb(43, 41, 41);
+        padding-inline:0px;
+        text-align:center;
+    
+    }
+    .text h1{
+        text-align: center;
+        font-size: 2rem;
+    
+    }
+    p{
+        padding-top: 20px;
+        font-size: 1.55rem;
+        font-weight: 500;
+    }
+    /* =================================================================================================================================================================== */
+    .smartTv .block, .watch .block{
+        margin-block:40px;
+        position: relative;
+        flex-basis: 0%;
+        padding: 0;
+        z-index: 1;
+    }
+    .smartTv img, .watch img{
+        height: 284px;
+        width: 379px;
+    }
+    .smartTv .video{
+        z-index: -1;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        max-width: 44%;
+        max-height: 55%;
+        position: absolute;
+        top: 46%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+    }
+    .watch .video{
+        z-index: -1;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        max-width: 63%;
+        max-height: 47%;
+        position: absolute;
+        top: 34%;
+        left: 50%;
+        /* -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%); */
+        transform: translate(-50%, -50%);
+    }
+  }

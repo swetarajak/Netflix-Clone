@@ -167,8 +167,8 @@ p{
     border-radius : 10px;
     margin-bottom:120px;
     position: absolute;
-    bottom: 50px;
-    left:20%;
+    bottom: 20px;
+    left:18.5%;
     background: black;
     display: flex;
 }
@@ -283,6 +283,7 @@ p{
         font-size:15px;
         border:10px solid red ;
     }
+
     /* ================================================================================================================================================ */
     .text{
         margin-top:30px;
@@ -307,6 +308,14 @@ p{
         border-bottom: 10px solid rgb(43, 41, 41);
         padding-inline:0px;
         text-align:center;
+    }
+    .box{
+        bottom:10px;
+    }
+    #stranger{
+        height: 90px;
+        width:80px;
+        padding:10px;
     }
     .text h1{
         text-align: center;

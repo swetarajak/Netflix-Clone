@@ -57,10 +57,17 @@ body{
     width:25%;
     height:55px;
     border-radius: 5px;
+    /* color: white; */
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) , rgba(0, 0, 0, 0.9) 100%);
     opacity: 0.5;
     margin-right:12px;
     padding-left: 10px;
+}
+::placeholder{
+    color:white;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 1;
 }
 .forms button{
     width:180px;
@@ -221,10 +228,14 @@ p{
 .rect:hover{
     background: rgb(48, 48, 48);
 }
+.membership{
+    padding:20px;
+}
 /* ================================================================================================================================================================= */
 @media only screen and (max-width: 640px) {
     body {
         max-width:640px;
+        min-width: 320px;
     }
     .bg{
         width:640px;
